@@ -5,6 +5,8 @@ INFORMACION DEL ESTUDIANTE:
 
 NOMBRE: Brislleily Sirley Carmona Correa
 PROGRAMA: Tecnologia en desarrollo de Sotfware
+CURSO: Ingenieria Web I
+GRUPO: PREICA2502B020022
 
 
 DESCRIPCION BREVE DEL PROYECTO:
@@ -29,3 +31,5 @@ Instalar una extensión de servidor local como "Live Server" en VS Code
 Abrir la carpeta del proyecto en VS Code
 Hacer clic derecho en index.html y seleccionar "Open with Live Server"
 El proyecto se abrirá en http://localhost:5500 o puerto alguno parecido
+
+CAPTURAS DE PANTALLA: 
