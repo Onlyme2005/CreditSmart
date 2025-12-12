@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreditSmart - Solicitar Crédito</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-piggy-bank"></i>
+                <h1>CreditSmart</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="simulador.html"><i class="fas fa-calculator"></i> Simulador</a></li>
+                    <li><a href="solicitar.html" class="active"><i class="fas fa-file-signature"></i> Solicitar Crédito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Solicita tu crédito en línea</h2>
+            <p>Completa el formulario y te contactaremos en menos de 24 horas</p>
+        </section>
+
+        <section class="application-form">
+            <h2 class="section-title">Formulario de Solicitud de Crédito</h2>
+            
+            <form id="credit-application-form">
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Datos Personales</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="full-name">Nombre completo *</label>
+                            <input type="text" id="full-name" required placeholder="Ej: Juan Pérez González">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="id-number">Cédula *</label>
+                            <input type="number" id="id-number" required placeholder="Ej: 12345678">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required placeholder="Ej: juan.perez@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Teléfono *</label>
+                            <input type="tel" id="phone" required placeholder="Ej: 3001234567">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-file-invoice-dollar"></i> Datos del Crédito</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="credit-type">Tipo de crédito *</label>
+                            <select id="credit-type" required>
+                                <option value="" disabled selected>Selecciona un tipo de crédito</option>
+                                <option value="libre-inversion">Crédito Libre Inversión</option>
+                                <option value="vehiculo">Crédito Vehículo</option>
+                                <option value="vivienda">Crédito Vivienda</option>
+                                <option value="educativo">Crédito Educativo</option>
+                                <option value="empresarial">Crédito Empresarial</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="amount">Monto solicitado ($) *</label>
+                            <input type="number" id="amount" required min="1000000" placeholder="Ej: 15000000">
+                            <small>Mínimo: $1.000.000 - Máximo depende del tipo de crédito</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="term">Plazo en meses *</label>
+                            <select id="term" required>
+                                <option value="" disabled selected>Selecciona un plazo</option>
+                                <option value="12">12 meses</option>
+                                <option value="24">24 meses</option>
+                                <option value="36">36 meses</option>
+                                <option value="48">48 meses</option>
+                                <option value="60">60 meses</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="purpose">Destino del crédito *</label>
+                            <textarea id="purpose" required rows="3" placeholder="Describe para qué utilizarás el crédito..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-briefcase"></i> Datos Laborales</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="company">Empresa donde trabaja *</label>
+                            <input type="text" id="company" required placeholder="Ej: TechSolutions S.A.S">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="position">Cargo *</label>
+                            <input type="text" id="position" required placeholder="Ej: Desarrollador Senior">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="income">Ingresos mensuales ($) *</label>
+                            <input type="number" id="income" required min="1000000" placeholder="Ej: 3500000">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Enviar Solicitud
+                    </button>
+                    <button type="reset" class="btn btn-secondary btn-large">
+                        <i class="fas fa-broom"></i> Limpiar Formulario
+                    </button>
+                </div>
+                
+                <div class="form-note">
+                    <p><i class="fas fa-info-circle"></i> <strong>Nota:</strong> Este formulario es solo para fines de diseño. La funcionalidad de envío no está implementada en esta actividad.</p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>CreditSmart &copy; 2023 - Sistema de Gestión de Solicitudes de Crédito</p>
+            <p>Actividad: S20 - EA1: Diseño de Interfaces Web</p>
+        </div>
+    </footer>
+</body>
+</html>
